@@ -1,6 +1,6 @@
-/*Appaloosa (Report) - publication style: Version: 6d7fb76 15 April 2023 14:44:44 Repo link: https://github.com/a-machine/appoloosa-report-style/blob/main/vivlio/style/css/appaloosa.css*/
+/*Book Style*/
 
-/*Headers gaffm #1*/
+/*Headers*/
 
 @font-face {
     font-family: "AgletSans";
@@ -18,7 +18,7 @@
     src: local('AgletSans SemiBold'), local('AgletSans-SemiBold'), url(media/AgletSans-SemiBold.otf) format('opentype');
   }
   
-  /*Headers gaffm h3, h4, h5, h6 */
+  /*Headers h3, h4, h5, h6 */
   
   @font-face {
     font-family: "FSMe";
@@ -27,7 +27,7 @@
     src: local('FSMe Bold'), local('FSMe-Bold'), url(media/FSMe-Bold.otf) format('opentype');
   }
   
-  /*body gaffm*/
+  /*body*/
   
   @font-face {
     font-family: "FSMe";
@@ -36,26 +36,26 @@
     src: local('FSMe'), local('FSMe'), url(media/FSMe.otf) format('opentype');
   }
     
-    *{
+  *{
       font-family: "FSMe", sans-serif;
     }
   
   /*Page size*/
   
   @page {
-      size: 210mm 297mm;
-      margin-top: 20mm;
-      margin-bottom: 30mm;
+      size: 152mm 229mm;!important
+      margin-top: 15mm;
+      margin-bottom: 15mm;
     }
   
    /*Cover*/ 
     
     @page: first {
-      size: 210mm 297mm;
+      size: 152mm 229mm;
       background-image: linear-gradient(#ecece6,#ecece6 73%,#00b8ec, #63c7f1 27%);
-      background-size: 210mm 297mm;
+      background-size: 152mm 229mm;
       display: flex;
-      margin-top: 30mm;
+      margin-top: 15mm;
       color: #ee717f;
       page-break-after: always;
       @bottom-left { content: normal; }
@@ -155,7 +155,9 @@
       overflow-wrap: break-word;
       word-wrap: break-word;
     }
+
   html body { background-color: transparent!important;}
+
   body {
       counter-reset: chapter figure-cat-figure figure-cat-photo figure-cat-table footnote-counter footnote-marker-counter;
       overflow-wrap: break-word;
@@ -1115,7 +1117,7 @@
       }
     
       @page {
-        size: 210mm 297mm;
+        size: 152mm 229mm;
       }
     
     }
