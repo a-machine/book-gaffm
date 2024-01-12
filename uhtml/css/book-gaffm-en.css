@@ -1,6 +1,6 @@
 /*book*/
 
-/*Headers #1*/
+/*Headers gaffm #1*/
 
 @font-face {
     font-family: "AgletSans";
@@ -9,7 +9,7 @@
     src: local('AgletSans Regular'), local('AgletSans-Regular'), url(media/AgletSans-Regular.otf) format('opentype');
   }
   
-  /*Headers h1, h2, article title */
+  /*Headers gaffm h1, h2, article title */
   
   @font-face {
     font-family: "AgletSans";
@@ -18,7 +18,7 @@
     src: local('AgletSans SemiBold'), local('AgletSans-SemiBold'), url(media/AgletSans-SemiBold.otf) format('opentype');
   }
   
-  /*Headers h3, h4, h5, h6 */
+  /*Headers gaffm h3, h4, h5, h6 */
   
   @font-face {
     font-family: "FSMe";
@@ -27,7 +27,7 @@
     src: local('FSMe Bold'), local('FSMe-Bold'), url(media/FSMe-Bold.otf) format('opentype');
   }
   
-  /*body*/
+  /*body gaffm*/
   
   @font-face {
     font-family: "FSMe";
@@ -43,7 +43,7 @@
   /*Page size*/
   
   @page {
-      size: 6in 9in;
+      size: 210mm 297mm;
       margin-top: 20mm;
       margin-bottom: 30mm;
     }
@@ -51,11 +51,11 @@
    /*Cover*/ 
     
     @page: first {
-      size: 6in 9in;
+      size: 210mm 297mm;
       background-image: linear-gradient(#ecece6,#ecece6 73%,#00b8ec, #63c7f1 27%);
-      background-size: 6in 9in;
+      background-size: 210mm 297mm;
       display: flex;
-      margin-top: 20mm;
+      margin-top: 30mm;
       color: #ee717f;
       page-break-after: always;
       @bottom-left { content: normal; }
@@ -88,7 +88,7 @@
         /*word-spacing: 1px;*/
         background-image: linear-gradient(45deg, #ee717f,#ee717f);
         background-repeat: no-repeat;
-        background-size: 80px 7px;
+        background-size: 80px 9px;
         background-position: 0 55%;
         padding-top: 20px;
         vertical-align: top;
@@ -101,7 +101,7 @@
           @bottom-right { width: 15%; }
       }
   
-  /*Recto - right page*/
+      /*Recto - right page*/
     
   @page: right {
       margin-left: 20mm;
@@ -127,7 +127,7 @@
         letter-spacing: 0.1pt;
         background-image: linear-gradient(45deg, #ee717f,#ee717f);
         background-repeat: no-repeat;
-        background-size: 80px 7px;
+        background-size: 80px 9px;
         background-position: 100% 55%;
         padding-top: 20px;
         vertical-align: top;
@@ -148,16 +148,14 @@
   /*HTML basics*/ 
   
   html {
-      font-size: 12px;
+      font-size: 18px;
       font-weight: 300;
       color: #000;
       text-rendering: optimizeLegibility;
       overflow-wrap: break-word;
       word-wrap: break-word;
     }
-
   html body { background-color: transparent!important;}
-
   body {
       counter-reset: chapter figure-cat-figure figure-cat-photo figure-cat-table footnote-counter footnote-marker-counter;
       overflow-wrap: break-word;
@@ -238,33 +236,28 @@
       font-size: 100%;
       vertical-align: baseline;
     }
-
     .copyrightpage p {
       font-family: "FSMe", sans-serif;
       color: #000;
     }
-
     nav::before {
       content: "Contents";
       font-family: "AgletSans", sans-serif;
-      font-size: 48px;
+      font-size: 55px;
       color: #ee717f;
-      font-weight: 800;
+      font-weight: 600;
     }
-
     nav {
-      margin: 0em 0;
+      margin: 2em 0;
       break-before: always;
       page-break-before: always;
-      width: 100%;
+      width: 80%;
       font-family: "FSMe", sans-serif;
     }
-
     nav ol {
       margin-top: 2em;
       list-style: none;
     }
-
     nav li a {
       display: inline-flex;
       width: 100%;
@@ -276,11 +269,9 @@
       border-bottom: 1px solid;
       line-height: 1.8em;
     }
-
     /*nav li a:hover {
       border-bottom: 0px;
     }*/
-
     nav li a::before {
       margin-right: 0.5em;
       /*border-bottom: 1px dotted;*/
@@ -288,7 +279,6 @@
       order: 1;
       flex: auto;
     }
-
     nav li {
       font-weight: 500;
     }
@@ -314,7 +304,6 @@
      order: 2;
     }
   
-
   /*Docsify*/
   
   /*Review*/
@@ -336,7 +325,7 @@
   .booktitle {
       /*text-align: center;*/
       font-family: "AgletSans", sans-serif;
-      font-size: 48px;
+      font-size: 55px;
       color:#111111;
       page-break-inside: avoid;
       page-break-after: avoid;
@@ -358,9 +347,9 @@
       height: 7em;
       background-image: linear-gradient(45deg, #ee717f,#ee717f);
       background-repeat: no-repeat;
-      background-size: 80px 7px;
+      background-size: 80px 9px;
       background-position: 0% 0%;
-      padding-top: 0.3em;
+      padding-top: 0.5em;
       color: #0a0a0a;
       content:" ";/*here goes text*/
       font-size: 18px;
@@ -373,7 +362,6 @@
       color: #0a0a0a;
       padding-top: 0.7em;
       margin: 0;
-      text-align: left;
     }
   
   h3.bookauthor {
@@ -383,7 +371,6 @@
       padding-top: 2em;
       font-weight: 400!important;
       margin: 0;
-      text-align: left;
     }
   
   h4.bookversion {
@@ -391,9 +378,9 @@
       font-size: 12px;
       color: #0a0a0a;
       font-weight: 400!important;
-      padding-top: 4em;
+      padding-top: 44em;
       margin: 0;
-      text-align: left;
+      text-align: right;
     }
     
   h1.part {
@@ -402,7 +389,6 @@
       color: #111111;
       margin-top:0;
     }
-
   h1.part:before {
       display: block;
       text-transform: none;
@@ -410,7 +396,7 @@
       height: 1em;
       background-image: linear-gradient(45deg, #ee717f,#ee717f);
       background-repeat: no-repeat;
-      background-size: 80px 7px;
+      background-size: 80px 9px;
       background-position: 0% 0%;
       content:"";
     }
@@ -418,23 +404,22 @@
   .article-part.article-title {
       page-break-before: always!important;
     }
-
   .article-title {
       font-family: "AgletSans", sans-serif;
       string-set: chapter-title content(text);
-      font-size: 48px;
+      font-size: 55px;
       color:#ee717f;
       /*margin-top: 2em;*/
-      page-break-inside: avoid!important;
-      page-break-after: avoid!important;
+      page-break-before: always!important;
+      page-break-inside: avoid;
+      page-break-after: avoid;
       text-transform: none;
       hyphens: manual;
       white-space: pre-line;
       letter-spacing: 0pt;
       word-spacing: 1px;
       font-weight: 800;
-      max-width: 100%;
-      padding-bottom: 1.9em;
+      max-width: 70%;
     }
   
   .article-title strong { font-weight: 600;}
@@ -443,34 +428,30 @@
       display: block;
       text-transform: none;
       counter-increment: chapter;
-      height: .7em;
+      height: 1em;
       background-image: linear-gradient(45deg, #ee717f,#ee717f);
       background-repeat: no-repeat;
-      background-size: 80px 7px;
+      background-size: 80px 9px;
       background-position: 0% 0%;
       content:"";
     }
-
   .article-title:after{
       display: block;
       background-image: linear-gradient(45deg, #ee717f,#ee717f);
       background-repeat: no-repeat;
-      background-size: 80px 7px;
+      background-size: 80px 9px;
       background-position: 0% 100%;
       content:"";
-      height: .7em;
+      height:1em;
     }
-
   .article-contributors, .article-authors {
-      font-size: 0.8837rem;
+      font-size:  0.8837rem;
       font-weight: 300;
       margin: 20px 0;
     }
-
   .article-abstract {
       margin: 10px 0 80px 0;
     }
-
   .article-abstract p {
       font-size:  1.3rem;
       font-weight: 400;
@@ -478,12 +459,12 @@
     }
     
   .article-body {
-       margin-top: 0px;
-       margin-left: 0px;
+       margin-top: -15px;
+       margin-left: 170px;
      }
     
      section.fnlist {
-       margin-left: 0px;
+       margin-left: 170px;
      }
     
   /*Literaturverzeichnis*/
@@ -500,18 +481,18 @@
       white-space: pre-line;
       /*letter-spacing: 0pt;
       word-spacing: 1px;*/
-      margin-left: 0px;
+      margin-left: 170px;
       font-weight: 600;
       color: #ee717f;
     }
     div.csl-bib-body {
-      margin-left: 0px;
+      margin-left: 170px;
     }
   
   .csl-entry {
       font-family: "FSMe", sans-serif;
       font-weight: 300;
-      font-size: 0.8837rem;
+      font-size:  0.8837rem;
       line-height: 1.37;
       margin-bottom: 9pt;
       /*letter-spacing: 0.2pt;
@@ -519,7 +500,7 @@
     }
   
   .article-body > figure.image-width-100 {
-      margin-left: 0px;
+      margin-left: -170px;
       width: auto !important;
     }
     
@@ -553,7 +534,7 @@
     }
     
     p {
-      font-size: 9.4pt; /* 0.8837rem */
+      font-size:  0.8837rem; /* 0.8837rem */
       line-height: 1.37; /* 1.3954rem */
       margin-bottom: 0pt;
       text-align: justify;
@@ -688,7 +669,6 @@
     margin-top: 1.5em;
     color:#ee717f; /*rgb(25,43,83);*/
     }
-
     h3, h3 strong,
     h4, h4 strong,
     h5,
@@ -731,8 +711,7 @@
     h3 {
       font-size: 1.18rem; /* 1.209rem */
       font-family: "FSMe", sans-serif;
-      margin-top: 1.5pt;
-      padding-top: .4em;
+      margin-top: 17pt;
       page-break-inside: avoid;
       page-break-after: avoid;
       font-weight: 800;
@@ -771,8 +750,7 @@
     
     hr {
         border: 0;
-        height: 0.5px;
-        margin-top: 1em;
+        height: 1px;
         background: #000;
         }
     
@@ -950,7 +928,7 @@
     }
     
     .article-body > table.table-100.table-fixed {
-      margin-left: 0px !important;
+      margin-left: -170px !important;
       width: auto !important;
     }
     .article-body + table caption {
@@ -1096,7 +1074,6 @@
     }
     
     /*None level*/
-
     ul.numeric-decimals li.none:before {
         content: " ";
     }
@@ -1106,7 +1083,7 @@
     }
     
     h2 + h2, h2 + h3, h3 + h4, h4 + h5 {
-      margin-top: 0pt;
+      margin-top: -5pt;
     }
     
     h2 + p {
@@ -1138,7 +1115,7 @@
       }
     
       @page {
-        size: 6in 9in;
+        size: 210mm 297mm;
       }
     
     }
